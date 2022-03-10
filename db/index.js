@@ -6,7 +6,7 @@ Country.hasMany(Details);
 const syncAndSeed = async() => {
     try{     
         await db.sync({ force:true });            
-         const afghanistan = await Country.create({name: 'Afghanistan'});
+        const afghanistan = await Country.create({name: 'Afghanistan'});
         const albania = await Country.create({name: 'Albania'});
         const algeria = await Country.create({name: 'Algeria'});
         const andorra = await Country.create({name: 'Andorra'});
@@ -405,7 +405,7 @@ const syncAndSeed = async() => {
         console.log(ex);
     }
 }
-syncAndSeed();
+//syncAndSeed();
 module.exports = {
     db,
     Country,
