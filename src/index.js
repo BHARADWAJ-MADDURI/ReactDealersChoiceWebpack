@@ -27,7 +27,6 @@ class App extends React.Component{
     }
 
     render() {
-        const randomCountry = this.randomCountry;
         return (
             <div>
                 <h1> Countries in the World</h1>
